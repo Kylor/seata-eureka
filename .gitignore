@@ -1,0 +1,17 @@
+/.idea
+
+/target
+
+/*.iml
+/.settings
+/.classpath
+
+/.tern-project
+
+/*.zip
+
+/doc
+
+/*.zip
+
+*.orig
