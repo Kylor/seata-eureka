@@ -9,6 +9,7 @@ package com.kylor.bussiness.service;
 //
 //import javax.annotation.PostConstruct;
 //import java.util.Map;
+
 import java.util.Map;
 
 import javax.annotation.PostConstruct;
@@ -35,10 +36,10 @@ public class BusinessService {
     @GlobalTransactional
     public void purchase(String userId, String commodityCode, int orderCount) {
         storageFeignClient.deduct(commodityCode, orderCount);
-//        orderFeignClient.create(userId, commodityCode, orderCount);
-//        if (!validData()) {
-//            throw new RuntimeException("账户或库存不足,执行回滚");
-//        }
+        orderFeignClient.create(userId, commodityCode, orderCount);
+        if (!validData()) {
+            throw new RuntimeException("账户或库存不足,执行回滚");
+        }
     }
 
     @PostConstruct
