@@ -1,6 +1,6 @@
 # seata-eureka
 
-deome地址：https://github.com/Kylor/seata-eureka
+demo地址：https://github.com/Kylor/seata-eureka
 
 seata服务下载地址 https://github.com/seata/seata/releases
 
