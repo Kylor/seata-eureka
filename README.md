@@ -1,12 +1,14 @@
 # seata-eureka
 seata服务下载地址 https://github.com/seata/seata/releases
 seata服务配置：
+
 file.conf:
-## transaction log store, only used in seata-server
+
+\## transaction log store, only used in seata-server
 store {
-  ## store mode: file、db
+  \## store mode: file、db
   mode = "db"
-  ## database store property
+  \## database store property
   db {
     ## the implement of javax.sql.DataSource, such as DruidDataSource(druid)/BasicDataSource(dbcp) etc.
     datasource = "druid"
@@ -26,9 +28,11 @@ store {
   }
 }
 
+
+
 registry.conf:
 registry {
-  # file 、nacos 、eureka、redis、zk、consul、etcd3、sofa
+  \# file 、nacos 、eureka、redis、zk、consul、etcd3、sofa
   type = "eureka"
 
   eureka {
@@ -44,7 +48,7 @@ registry {
 }
 
 config {
-  # file、nacos 、apollo、zk、consul、etcd3
+  \# file、nacos 、apollo、zk、consul、etcd3
   type = "file"
   
   file {
