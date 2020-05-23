@@ -1,4 +1,7 @@
 # seata-eureka
+
+deome地址：https://github.com/Kylor/seata-eureka
+
 seata服务下载地址 https://github.com/seata/seata/releases
 
 seata服务运行: ./seata-server.sh -p 8091 -h 127.0.0.1
@@ -69,3 +72,20 @@ config {
         </dependency>
 ```
  请使用2.2.1版本。 2.2.2版本会报错。
+
+运行顺序：
+
+1.eureka
+
+2.seate服务
+
+3.account
+
+4.storage
+
+5.order
+
+6.bussiness
+
+调用bussiness模块里面controller函数查看结果。
+
