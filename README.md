@@ -3,12 +3,12 @@ seata服务下载地址 https://github.com/seata/seata/releases
 seata服务配置：
 
 file.conf:
-
-\## transaction log store, only used in seata-server
+```Bash
+## transaction log store, only used in seata-server
 store {
-  \## store mode: file、db
+  ## store mode: file、db
   mode = "db"
-  \## database store property
+  ## database store property
   db {
     ## the implement of javax.sql.DataSource, such as DruidDataSource(druid)/BasicDataSource(dbcp) etc.
     datasource = "druid"
@@ -27,12 +27,12 @@ store {
     maxWait = 5000
   }
 }
-
-
+```
 
 registry.conf:
+```Bash
 registry {
-  \# file 、nacos 、eureka、redis、zk、consul、etcd3、sofa
+  # file 、nacos 、eureka、redis、zk、consul、etcd3、sofa
   type = "eureka"
 
   eureka {
@@ -48,18 +48,21 @@ registry {
 }
 
 config {
-  \# file、nacos 、apollo、zk、consul、etcd3
+  # file、nacos 、apollo、zk、consul、etcd3
   type = "file"
   
   file {
     name = "file.conf"
   }
 }
+```
 注意截止2020年5月23号。
+```Bash
 <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
 <!--            <version>2.2.2.RELEASE</version>-->
             <version>2.2.1.RELEASE</version>
         </dependency>
+```
  请使用2.2.1版本。 2.2.2版本会报错。
