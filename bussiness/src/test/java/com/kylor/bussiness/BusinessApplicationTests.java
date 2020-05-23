@@ -1,12 +1,12 @@
 package com.kylor.bussiness;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
+//
+//@SpringBootTest
 class BusinessApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 

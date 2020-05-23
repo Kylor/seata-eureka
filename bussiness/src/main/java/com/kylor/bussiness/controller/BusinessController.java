@@ -17,7 +17,8 @@ public class BusinessController {
      *
      * @return
      */
-    @RequestMapping(value = "/purchase/commit", method = RequestMethod.GET)
+//    @RequestMapping(value = "/purchase/commit", method = RequestMethod.GET)
+    @RequestMapping(value = "/purchase/commit",method = RequestMethod.GET)
     public String purchaseCommit() {
         try {
             businessService.purchase("U100000", "C100000", 30);
@@ -33,6 +34,7 @@ public class BusinessController {
      *
      * @return
      */
+//    @RequestMapping("/purchase/rollback")
     @RequestMapping("/purchase/rollback")
     public String purchaseRollback() {
         try {
