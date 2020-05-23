@@ -1,7 +1,10 @@
 # seata-eureka
 seata服务下载地址 https://github.com/seata/seata/releases
+
 seata服务运行: ./seata-server.sh -p 8091 -h 127.0.0.1
+
 seata服务配置：
+
 file.conf:
 ```Bash
 ## transaction log store, only used in seata-server
